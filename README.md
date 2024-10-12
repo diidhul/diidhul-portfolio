@@ -1,2 +1,2 @@
 # diidhul-portfolio
-This is my portfolio website, that deliver who I am &amp; wht im doin rn
+This is my portfolio website, where I share who I am and what I'm currently doing.
