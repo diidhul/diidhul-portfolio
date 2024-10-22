@@ -11,7 +11,7 @@ const Navbar = () => {
                     <Link to="/aboutMe" className="text-darkNavyBlue hover:underline">About Me</Link>
                     <Link to="/newsletter" className="text-darkNavyBlue hover:underline">Newsletter</Link> {/* Update ini untuk routing ke Newsletter */}
                 </div>
-                <button className='border-2 p-2 border-darkNavyBlue rounded-md bg-#243763 bg-mediumPinkishBeige bg-blend-darken hover transition-colors duration-300 hover:bg-darkNavyBlue hover:text-offWhite'>Connect Me</button>
+                <button id='subscriptionModal' className='border-2 p-2 border-darkNavyBlue rounded-md bg-#243763 bg-mediumPinkishBeige bg-blend-darken hover transition-colors duration-300 hover:bg-darkNavyBlue hover:text-offWhite'>Connect Me</button>
             </div>
         </nav>
     );

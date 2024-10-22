@@ -24,7 +24,7 @@ const Newsletter = () => {
     }, [])
 
     return (
-        <section className='container px-8 pb-20 mx-auto transition-transform duration-500 md:px-16 lg:px-16 hover:-translate-y-2'>
+        <section className='container px-8 pb-20 mx-auto md:px-16 lg:px-16'>
             <h1 className='px-24 py-8 text-3xl font-bold underline'>News Letter</h1>
             <br />
             <div className='grid grid-cols-2 gap-8 px-24'>

@@ -1,5 +1,5 @@
 import React from 'react';
-import ppimage from '/pp.png';
+import ppimage from '/pp.svg';
 
 const Hero = () => {
     return (
@@ -12,12 +12,16 @@ const Hero = () => {
                     alt="Hero Image of Fadhil"
                 />
                 <div className="basis-2/3">
-                    <h1 className="text-5xl font-semibold text-darkNavyBlue">
+                    <h1 className='text-5xl font-semibold transition-all duration-300 text-darkNavyBlue hover:tracking-widest hover:text-mediumPinkishBeige'>
                         Hi<span className="inline-block font-mono animate-wave">👋</span> Aku Fadhil, berusaha menjadi frontend engineer
                     </h1>
-                    <button className="px-4 py-2 mt-6 text-white transition-colors duration-300 border-2 border-dotted rounded-lg border-lightGray bg-darkNavyBlue hover:bg-mediumPinkishBeige hover:text-darkNavyBlue hover:font-bold">
+                    <button
+                        className="px-4 py-2 mt-6 text-white duration-300 border-2 border-dotted rounded-lg border-lightGray bg-darkNavyBlue hover:bg-mediumPinkishBeige hover:text-darkNavyBlue hover:font-bold hover:scale-110"
+                        onClick={() => window.open('https://drive.google.com/uc?export=download&id=105kXPcLXfVPpXY8_MNiA9om0yRwrS6UT', '_blank')}
+                    >
                         Download CV
                     </button>
+
                 </div>
             </div>
 
