@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImg from '/pp.png';
+import ppimage from '/pp.png';
 
 const Hero = () => {
     return (
@@ -8,7 +8,7 @@ const Hero = () => {
             <div className="flex flex-row items-center pt-20 px-36 gap-x-8">
                 <img
                     className="w-auto h-auto max-w-xs transition-transform duration-300 transform basis-1/3 hover:scale-110"
-                    src={heroImg}
+                    src={ppimage}
                     alt="Hero Image of Fadhil"
                 />
                 <div className="basis-2/3">
