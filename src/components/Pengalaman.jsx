@@ -32,22 +32,22 @@ const Pengalaman = () => {
         <section className="pt-16 mt-1">
             <div className="container px-8 mx-auto md:px-16 lg:px-24">
                 <h2 className="justify-center mb-12 text-4xl font-semibold text-center text-darkNavyBlue">Work Experience</h2>
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 ">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
                     {poinPengalaman.map((poin) => (
-                        <div className='p-1 border-2 border-dashed rounded-lg border-darkNavyBlue'>
-                            <div key={poin.id} className="flex flex-row items-center gap-2 px-6 py-4 border-2 rounded-lg shadow-lg basis-2 border-darkNavyBlue">
+                        <div key={poin.id} className="p-1 transition-transform duration-500 border-2 border-dashed rounded-lg border-darkNavyBlue hover:-translate-y-2">
+                            {/* Inner Card with Shadow and Border */}
+                            <div className="flex flex-row items-center gap-4 px-6 py-4 border rounded-lg shadow-lg border-darkNavyBlue">
                                 <img src={poin.image} alt={poin.title} className="w-16 h-16" />
-                                <div className="container pl-4 pr-2">
-                                    <h1 className="mb-4 text-2xl font-bold text-darkNavyBlue">{poin.title}</h1>
+                                <div className="flex flex-col justify-between pl-4 pr-2">
+                                    <h1 className="mb-2 text-2xl font-bold text-darkNavyBlue">{poin.title}</h1>
                                     <p className="mb-4 text-lg text-gray-700">{poin.content}</p>
-                                    <div className="flex">
-                                        <div className="flex-grow"></div> {/* Ini untuk mengisi ruang */}
-                                        <a href="#" className="ml-auto transition-transform duration-300 text-aquaBlue hover:opacity-0 hover:text-darkNavyBlue">Read more</a>
+                                    <div className="flex items-center justify-between">
+                                        <span></span> {/* Placeholder untuk mengisi ruang */}
+                                        <a href="#" className="transition duration-300 text-aquaBlue hover:underline hover:text-darkNavyBlue">Read more</a>
                                     </div>
                                 </div>
-
                             </div>
-                        </div >
+                        </div>
                     ))}
                 </div>
             </div>

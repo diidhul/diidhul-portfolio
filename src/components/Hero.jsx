@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImg from '/heroImg.png';
+import heroImg from '/pp.png';
 
 const Hero = () => {
     return (
@@ -13,10 +13,10 @@ const Hero = () => {
                 />
                 <div className="basis-2/3">
                     <h1 className="text-5xl font-semibold text-darkNavyBlue">
-                        Hi<span className="inline-block animate-wave">👋</span> Aku Fadhil, berusaha menjadi frontend engineer
+                        Hi<span className="inline-block font-mono animate-wave">👋</span> Aku Fadhil, berusaha menjadi frontend engineer
                     </h1>
                     <button className="px-4 py-2 mt-6 text-white transition-colors duration-300 border-2 border-dotted rounded-lg border-lightGray bg-darkNavyBlue hover:bg-mediumPinkishBeige hover:text-darkNavyBlue hover:font-bold">
-                        Connect
+                        Download CV
                     </button>
                 </div>
             </div>

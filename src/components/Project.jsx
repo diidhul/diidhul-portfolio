@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const skillIcons = [
     {
@@ -44,12 +44,50 @@ const skillIcons = [
 ];
 
 const Project = () => {
+    const [beforeHighlight, setBeforeHighlight] = useState([]);
+    const [highlightedLetters, setHighlightedLetters] = useState([]);
+    const [afterHighlight, setAfterHighlight] = useState([]);
+
+    useEffect(() => {
+        const h3 = "Im  currently looking to join a team that values";
+        const text = " cross-functional";
+        const h3End = " improving people's lives through accessible design.";
+
+        const h3Array = h3.split('');
+        const textArray = text.split('');
+        const h3EndArray = h3End.split('');
+
+        setBeforeHighlight(h3Array);
+        setHighlightedLetters(textArray);
+        setAfterHighlight(h3EndArray);
+    }, []);
+
     return (
         <section className="flex flex-col items-center justify-center pb-16 pt-36">
             <div className="mb-8 text-center">
                 <h3 className="text-base font-semibold pl-60 pr-60">
-                    I'm currently looking to join a <span className="text-indigo-500 duration-300 hover:scale-110 transform-transition hover">cross-functional</span> team
-                    that values improving people's lives through accessible design
+                    {/* Teks sebelum highlight */}
+                    {beforeHighlight.map((letter, index) => (
+                        <span key={index} className="inline-block transition-transform duration-300 hover:translate-y-2">
+                            {letter}
+                        </span>
+                    ))}
+
+                    {/* Teks yang di-highlight */}
+                    <span className="text-indigo-500 duration-300 hover:scale-110 transform-transition">
+                        {highlightedLetters.map((letter, index) => (
+                            <span key={index} className="inline-block transition-transform duration-300 hover:translate-y-2">
+                                {letter}
+                            </span>
+                        ))}
+                    </span>
+
+                    {/* Teks setelah highlight */}
+                    {afterHighlight.map((letter, index) => (
+                        <span key={index} className="inline-block transition-transform duration-300 hover:translate-y-2">
+                            {letter}
+                        </span>
+                    ))}
                 </h3>
             </div>
 

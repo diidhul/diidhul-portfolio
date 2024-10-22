@@ -2,7 +2,13 @@
 export default {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Inter", "Helvetica", "Arial", "sans-serif"],
+        serif: ["Merriweather", "serif"],
+        mono: ["Menlo", "monospace"],
+      },
+    },
   },
   plugins: [],
 };
