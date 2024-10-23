@@ -27,8 +27,14 @@ const Hero = () => {
 
             {/* Intro */}
             <div className="flex flex-col gap-2 mt-20 px-36">
-                <h2 className="text-4xl font-medium text-darkNavyBlue">Website apa ini?</h2>
-                <p className="text-lg font-normal text-darkNavyBlue">Biar kalian semua pada kenal ama ane :)</p>
+                <h2
+                    class="relative w-[max-content] font-mono text-4xl before:absolute before:inset-0 before:animate-typewriter before:bg-offWhite after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-darkNavyBlue">
+                    Website apa ini ?
+                </h2>
+                <br />
+                <p className="text-lg font-normal text-darkNavyBlue">
+                    Biar kalian semua pada kenal ama ane :)
+                </p>
             </div>
 
             {/* Sekction Desc */}

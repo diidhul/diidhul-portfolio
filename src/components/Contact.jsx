@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
     return (
         <section className='py-20'>
-            <div className='inline-block p-2 transition-transform duration-500 border-2 border-dashed rounded-lg hover:-translate-y-2 mx-36 border-darkNavyBlue'>
+            <div className='inline-block p-2 transition-all duration-500 border-2 border-dashed rounded-lg animate-softBounce hover:animate-none hover:translate-y-0 mx-36 border-darkNavyBlue'>
                 <div className='p-6 border-2 rounded-lg border-darkNavyBlue'>
                     <h2 className='py-2 text-2xl font-semibold text-darkNavyBlue'>Contact</h2>
                     <div>

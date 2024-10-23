@@ -1,19 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import NewsCard from '../components/newsCard';
-import axios from 'axios';
+import axios from 'axios'; //library untuk HTTP request
 
-// api 👉 https://api-berita-indonesia.vercel.app/cnn/teknologi/
 
 const Newsletter = () => {
-    const [posts, setPosts] = useState([])
+    const [posts, setPosts] = useState([]) //declare posts, yang nnti nampung data dari API
 
-    const getPosts = async () => {
+    const getPosts = async () => { // Fungsi asinkron getPosts ngambil data dari API.
         try {
-            const url = "https://api-berita-indonesia.vercel.app/cnn/teknologi/"
-            const response = await axios.get(url)
-            console.log(response);
+            const url = "https://api-berita-indonesia.vercel.app/cnn/teknologi/" //endpoint
+            const response = await axios.get(url) //ngeget data, trus masukin ke response
+            console.log(response); //ngeprint response
 
-            setPosts(response?.data?.data?.posts);
+            setPosts(response?.data?.data?.posts); //catch data yang udah diambil dari api lalu aku map ke setPosts
         } catch (error) {
             console.log(error);
         }
