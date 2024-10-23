@@ -9,7 +9,8 @@ import Newsletter from './pages/Newsletter'; // Import halaman Newsletter dari f
 function App() {
   return (
     <Router>
-      <div className='px-20 bg-offWhite'>
+      <div className='px-4 sm:px-8 md:px-16 lg:px-20 bg-offWhite'>
+
         <Navbar />
         {/*rooutes untuk pindah pindah halaman*/}
         <Routes>
