@@ -25,7 +25,7 @@ const Contact = () => {
                                 <li>
                                     <a href='https://linkedin.com/in/alfadhil' target='_blank' className='flex flex-row items-center hover:underline'>
                                         <img className='w-4 h-4 mr-2' src="https://img.icons8.com/?size=100&id=447&format=png&color=000000" alt="LinkedIn Icon" />
-                                        linkedin.com/diidhul
+                                        linkedin.com/in/alfadhil
                                     </a>
                                 </li>
                             </ul>

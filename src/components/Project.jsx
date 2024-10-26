@@ -91,8 +91,8 @@ const Project = () => {
                 </h3>
             </div>
 
-            {/* Carousel Skill Icons */}
-            <SkillCarousel />
+            {/* Carousel or Grid based on screen size */}
+            <SkillIcons />
 
             {/* Gambar project */}
             <div className='flex items-center justify-center mt-8'>
@@ -102,61 +102,63 @@ const Project = () => {
     );
 };
 
+const SkillIcons = () => {
+    // Check if screen width is less than 640px (mobile view)
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
 
-const SkillCarousel = () => {
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 640);
+        };
 
-    // Setting untuk carousel menggunakan slick-carousel
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 2, // Jumlah ikon yang ditampilkan di handphone
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 640, // Batas untuk handphone
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 768, // Batas untuk tablet
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 1024, // Batas untuk desktop
-                settings: {
-                    slidesToShow: 5,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            }
-        ]
-    };
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
-    return (
-        <div className="w-full mt-8">
-            <Slider {...settings}>
-                {skillIcons.map((skill) => (
-                    <div key={skill.id} className="flex flex-col items-center">
-                        <div className="flex items-center justify-center p-2 border-solid rounded-full sm:border-2 sm:border-darkNavyBlue">
-                            <img src={skill.icon} alt={skill.name} className="w-8 h-8" />
+    if (isMobile) {
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 5,
+            slidesToScroll: 4,
+        };
+
+        return (
+            <div className="w-full mt-8">
+                <Slider {...settings}>
+                    {skillIcons.map((skill) => (
+                        <div key={skill.id} className="flex flex-col items-center">
+                            <div className="flex items-center justify-center p-2 rounded-full border-darkNavyBlue">
+                                <img src={skill.icon} alt={skill.name} className="w-8 h-8" />
+                            </div>
                         </div>
-
+                    ))}
+                </Slider>
+            </div>
+        );
+    } else {
+        return (
+            <div className="grid gap-6 mt-8 lg:grid-cols-5 lg:grid-rows-2 lg:gap-y-4 lg:place-items-center ">
+                {/* Baris pertama: 5 item */}
+                {skillIcons.slice(0, 5).map((skill) => (
+                    <div key={skill.id} className="flex items-center justify-center w-16 h-16 p-2 duration-300 border-2 rounded-full border-darkNavyBlue hover:scale-110 transform-transition">
+                        <img src={skill.icon} alt={skill.name} className="w-8 h-8" />
                     </div>
                 ))}
-            </Slider>
-        </div>
-    );
+
+                {/* Kolom kosong untuk menyelaraskan baris kedua */}
+                <div className="hidden lg:block"></div> {/* Kolom kosong kiri */}
+                {skillIcons.slice(5).map((skill) => (
+                    <div key={skill.id} className="flex items-center justify-center w-16 h-16 p-2 duration-300 border-2 rounded-full border-darkNavyBlue hover:scale-110 transform-transition">
+                        <img src={skill.icon} alt={skill.name} className="w-8 h-8" />
+                    </div>
+                ))}
+                <div className="hidden lg:block"></div> {/* Kolom kosong kanan */}
+            </div>
+
+        );
+    }
 };
 
 export default Project;
