@@ -148,7 +148,7 @@ const SkillIcons = () => {
                 ))}
 
                 {/* Kolom kosong untuk menyelaraskan baris kedua */}
-                <div className="hidden lg:block"></div> {/* Kolom kosong kiri */}
+                <div className="hidden lg:block"></div> {/* buat sebelah kanan biar icon ada di tengah */}
                 {skillIcons.slice(5).map((skill) => (
                     <div key={skill.id} className="flex items-center justify-center w-16 h-16 p-2 duration-300 border-2 rounded-full border-darkNavyBlue hover:scale-110 transform-transition">
                         <img src={skill.icon} alt={skill.name} className="w-8 h-8" />
