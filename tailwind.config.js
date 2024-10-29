@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -8,15 +8,6 @@ export default {
         serif: ["Merriweather", "serif"],
         mono: ["Menlo", "monospace"],
       },
-    },
-  },
-  plugins: [],
-};
-
-module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {
       colors: {
         darkNavyBlue: "#243763",
         offWhite: "#F5F5EB",
@@ -48,7 +39,7 @@ module.exports = {
             animationTimingFunction: "ease-in-out",
           },
           "50%": {
-            transform: "translateY(-10%)", // Adjust this value for smaller bounce
+            transform: "translateY(-10%)",
             animationTimingFunction: "ease-in-out",
           },
         },
@@ -77,5 +68,31 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        ".underline-from-right": {
+          position: "relative",
+          color: "currentColor", // Menggunakan warna teks saat ini
+          textDecoration: "none",
+        },
+        ".underline-from-right::after": {
+          content: '""',
+          position: "absolute",
+          right: 0,
+          bottom: "0px",
+          width: "100%",
+          height: "2px",
+          backgroundColor: "currentColor",
+          transform: "scaleX(0)",
+          transformOrigin: "right",
+          transition: "transform 0.3s ease-in-out",
+        },
+        ".underline-from-right:hover::after": {
+          transform: "scaleX(1)",
+          transformOrigin: "left",
+        },
+      });
+    },
+  ],
 };

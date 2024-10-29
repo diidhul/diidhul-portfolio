@@ -11,7 +11,7 @@ const Contact = () => {
                         <div className='mt-4'>
                             <ul className="space-y-3">
                                 <li>
-                                    <a href="mailto: https://alfadhilibnufikri.com" target='_blank' className='flex flex-row items-center hover:underline'>
+                                    <a href="mailto: https://alfadhilibnufikri.com" target='_blank' className='flex flex-row items-center hover:underline '>
                                         <img className='w-4 h-4 mr-2' src="https://img.icons8.com/?size=100&id=53388&format=png&color=000000" alt="Email Icon" />
                                         alfadhilibnufikri.com
                                     </a>

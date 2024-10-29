@@ -46,7 +46,7 @@ const Pengalaman = () => {
                                     <h1 className="mb-2 text-lg font-bold sm:text-xl md:text-2xl text-darkNavyBlue">{poin.title}</h1>
                                     <p className="mb-4 text-sm text-gray-700 sm:text-base md:text-lg">{poin.content}</p>
                                     <div className="flex justify-end">
-                                        <a target="_blank" href={poin.link} className="transition duration-300 text-aquaBlue hover:underline hover:text-darkNavyBlue">Read more</a>
+                                        <a target="_blank" href={poin.link} className="transition duration-300 text-aquaBlue hover:underline-from-right underline-from-right hover:text-darkNavyBlue">Read more</a>
                                     </div>
                                 </div>
                             </div>

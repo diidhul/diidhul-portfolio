@@ -19,7 +19,7 @@ const Navbar = () => {
             <nav className="px-4 border-b-2 sm:px-6 md:px-16 lg:px-24 text-darkNavyBlue bg-offWhite border-darkNavyBlue">
                 <div className='container flex flex-wrap items-center justify-between py-2'>
                     {/* Logo hanya tampil di tablet ke atas */}
-                    <Link to="/" className='hidden p-1 text-2xl font-bold md:inline'>
+                    <Link to="/" className='hidden p-1 text-2xl font-bold transition-transform duration-300 md:inline hover:scale-110'>
                         diidhul<span className='text-aquaBlue'>..</span>
                     </Link>
 
@@ -33,10 +33,10 @@ const Navbar = () => {
                     </div>
 
                     {/* Link Navigasi - disembunyikan di mobile */}
-                    <div className="hidden space-x-6 font-medium md:flex">
-                        <Link to="/" className="text-darkNavyBlue hover:underline">Home</Link>
-                        <Link to="/aboutMe" className="text-darkNavyBlue hover:underline">About Me</Link>
-                        <Link to="/newsletter" className="text-darkNavyBlue hover:underline">Newsletter</Link>
+                    <div className="hidden space-x-6 font-medium md:flex ">
+                        <Link to="/" className="text-darkNavyBlue underline-from-right">Home</Link>
+                        <Link to="/aboutMe" className="text-darkNavyBlue underline-from-right">About Me</Link>
+                        <Link to="/newsletter" className="text-darkNavyBlue underline-from-right">Newsletter</Link>
                     </div>
 
                     {/* Tombol "Connect Me" */}
