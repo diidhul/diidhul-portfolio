@@ -5,7 +5,7 @@ import Pengalaman from './components/Pengalaman';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import Newsletter from './pages/Newsletter'; // Import halaman Newsletter dari folder pages
-import AboutMe from './pages/AboutMe';
+import AboutMe from './pages/aboutMe';
 
 function App() {
   return (
