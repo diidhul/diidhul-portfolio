@@ -35,7 +35,7 @@ const Navbar = () => {
                     {/* Link Navigasi - disembunyikan di mobile */}
                     <div className="hidden space-x-6 font-medium md:flex ">
                         <Link to="/" className="text-darkNavyBlue underline-from-right">Home</Link>
-                        <Link to="/aboutMe" className="text-darkNavyBlue underline-from-right">About Me</Link>
+                        <Link to="/about" className="text-darkNavyBlue underline-from-right">About Me</Link>
                         <Link to="/newsletter" className="text-darkNavyBlue underline-from-right">Newsletter</Link>
                     </div>
 

@@ -5,11 +5,12 @@ import Pengalaman from './components/Pengalaman';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import Newsletter from './pages/Newsletter'; // Import halaman Newsletter dari folder pages
+import AboutMe from './pages/AboutMe';
 
 function App() {
   return (
     <Router>
-      <div className='px-4 sm:px-8 md:px-16 lg:px-20 bg-offWhite'>
+      <div className='min-h-screen px-4 sm:px-8 md:px-16 lg:px-20 bg-offWhite'>
 
         <Navbar />
         {/*rooutes untuk pindah pindah halaman*/}
@@ -24,7 +25,7 @@ function App() {
               <Contact />
             </>
           } />
-          <Route path="/about" element={<aboutMe />} />
+          <Route path="/about" element={<AboutMe />} />
           <Route path="/newsletter" element={<Newsletter />} /> {/* routingan buat nampilin newslette */}
         </Routes>
       </div>
