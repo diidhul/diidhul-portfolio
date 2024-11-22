@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import NewsCard from '../components/newsCard';
+import NewsCard from '../components/NewsCard';
 import axios from 'axios'; //library untuk HTTP request
 
 
