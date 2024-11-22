@@ -5,28 +5,28 @@ const poinPengalaman = [
         id: 1,
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
         title: "Wordpress Developer",
-        content: "mugee.id, Website ecommerce yang menjual kebutuhan sayur mayur harian untuk kebutuhan belanja keluarga",
+        content: "mugee.id, e-commerce website that sells daily vegetable needs for family shopping needs",
         link: "https://mugee.id/"
     },
     {
         id: 2,
         image: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
         title: "Frontend Engineer",
-        content: "Mengembangkan landing page responsif sebagai Frontend Engineer dan meningkatkan skor SEO untuk memaksimalkan traffic website di mesin pencari seperti Google.",
+        content: "Develop responsive landing pages as a Frontend Engineer and increase SEO scores to maximize website traffic on search engines like Google.",
         link: "https://padebooks.com"
     },
     {
         id: 3,
         image: "https://img.icons8.com/?size=100&id=WoNypriVqIG7&format=png&color=000000",
         title: "IT Support",
-        content: "2 tahun berpengalaman sebagai IT Support Engineer di Posfin, yang menangani perangkat, server, dan jaringan di Kantor Pos Meulaboh serta BPJS Kesehatan.",
+        content: "2 years experience as an IT Support Engineer at Posfin, handling devices, servers and networks at the Meulaboh Post Office and BPJS Kesehatan.",
         link: "example.com"
     },
     {
         id: 4,
         image: "https://img.icons8.com/?size=100&id=VXQrhy9fWtm1&format=png&color=000000",
         title: "Frontend Engineer",
-        content: "Tesujianonline.com berkontribusi dalam pembangunan frontend situs latihan tryout untuk pengguna yang akan mengikuti tes CPNS.",
+        content: "Tesujianonline.com contributed to the development of the frontend of the tryout practice site for users who will take the CPNS test.",
         link: "example.com"
     }
 ];
