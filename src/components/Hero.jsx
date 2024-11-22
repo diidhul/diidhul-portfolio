@@ -26,7 +26,11 @@ const Hero = () => {
 
             {/* Intro */}
             <div className="flex flex-col gap-2 px-4 mt-10 sm:px-6 md:px-36">
+<<<<<<< HEAD
                 <h2 className="relative inline-block overflow-hidden font-mono text-3xl sm:text-4xl before:absolute before:top-0 before:left-0 before:h-full before:w-full before:animate-typewriter before:bg-offWhite">
+=======
+                <h2 className="relative overflow-hidden max-w-full font-mono text-3xl sm:text-3xl before:absolute before:inset-0 before:animate-typewriter before:bg-offWhite after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-darkNavyBlue">
+>>>>>>> fe50fdaa584a742768d12383091f6138bc6d3657
                     What sites is this?
                 </h2>
                 <br />
