@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Newsletter from './pages/Newsletter'; // Import halaman Newsletter dari folder pages
 import AboutMe from './pages/aboutMe';
 
+
 function App() {
   return (
     <Router>

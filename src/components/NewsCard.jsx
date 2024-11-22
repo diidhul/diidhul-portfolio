@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types' //import proptypes untuk 
 
+
 const NewsCard = ({ item }) => {
 
     // function untuk ganti tanggal sesuai dengan format biasanya

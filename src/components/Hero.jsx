@@ -26,7 +26,7 @@ const Hero = () => {
 
             {/* Intro */}
             <div className="flex flex-col gap-2 px-4 mt-10 sm:px-6 md:px-36">
-                <h2 className="relative w-[max-content] font-mono text-3xl sm:text-4xl before:absolute before:inset-0 before:animate-typewriter before:bg-offWhite after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-darkNavyBlue">
+                <h2 className="relative w-[max-content] font-mono text-3xl sm:text-3xl before:absolute before:inset-0 before:animate-typewriter before:bg-offWhite after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-darkNavyBlue">
                     What sites is this ?
                 </h2>
                 <br />
