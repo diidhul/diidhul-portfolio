@@ -18,10 +18,10 @@ export default {
       animation: {
         wave: "wave 1.5s ease-in-out infinite",
         softBounce: "softBounce 1s infinite",
-        typewriter: "typewriter 10s steps(60, end) infinite", // Loop terus
-        caret: "caret 0.7s steps(1, end) infinite", // Loop kedipan
+        typewriter: "typewriter 2s steps(11) forwards",
+        caret:
+          "typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s",
       },
-
       keyframes: {
         wave: {
           "0%": { transform: "rotate(0deg)" },
@@ -43,17 +43,11 @@ export default {
             animationTimingFunction: "ease-in-out",
           },
         },
-
         typewriter: {
-          "0%": { transform: "translateX(-100%)" }, // Mulai dari luar layar (kiri)
-          "50%": { transform: "translateX(0%)" }, // Teks sepenuhnya terlihat
-          "100%": { transform: "translateX(100%)" }, // Pergi ke luar layar (kanan)
+          to: {
+            left: "100%",
+          },
         },
-
-        caret: {
-          0: { opacity: "50" },
-        },
-
         blink: {
           "0%": {
             opacity: "0",
@@ -74,7 +68,6 @@ export default {
       },
     },
   },
-
   plugins: [
     function ({ addComponents }) {
       addComponents({
