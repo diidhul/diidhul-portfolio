@@ -11,7 +11,7 @@ const Hero = () => {
                     alt="Hero Image of Fadhil"
                 />
                 <div className="text-center md:basis-2/3 md:text-left">
-                    <h1 className="text-3xl font-semibold transition-all duration-300 sm:text-4xl md:text-5xl text-darkNavyBlue hover:tracking-widest hover:text-mediumPinkishBeige">
+                    <h1 className="overflow-hidden text-3xl font-semibold transition-all duration-300 sm:text-[18px] md:text-5xl text-darkNavyBlue hover:tracking-widest hover:text-mediumPinkishBeige">
                         Hola<span className="inline-block font-mono animate-wave">👋</span> Me alfadhil, Junior Frontend Engineer
                     </h1>
                     <button

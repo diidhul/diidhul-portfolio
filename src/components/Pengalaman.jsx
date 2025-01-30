@@ -1,3 +1,5 @@
+
+
 const poinPengalaman = [
     {
         id: 1,
@@ -18,14 +20,14 @@ const poinPengalaman = [
         image: "https://img.icons8.com/?size=100&id=WoNypriVqIG7&format=png&color=000000",
         title: "IT Support",
         content: "2 years experience as an IT Support Engineer at Posfin, handling devices, servers and networks at the Meulaboh Post Office and BPJS Kesehatan.",
-        link: "example.com"
+        link: "/*"
     },
     {
         id: 4,
         image: "https://img.icons8.com/?size=100&id=VXQrhy9fWtm1&format=png&color=000000",
         title: "Frontend Engineer",
         content: "Tesujianonline.com contributed to the development of the frontend of the tryout practice site for users who will take the CPNS test.",
-        link: "example.com"
+        link: "https://tesujianonline.com/"
     }
 ];
 

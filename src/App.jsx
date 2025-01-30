@@ -28,6 +28,8 @@ function App() {
           } />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/newsletter" element={<Newsletter />} /> {/* routingan buat nampilin newslette */}
+          <Route path="*" element={<h1 className='flex items-center justify-center h-screen text-3xl text-mediumPinkishBeige'>Work on proggress ...
+          </h1>} />
         </Routes>
       </div>
     </Router>
