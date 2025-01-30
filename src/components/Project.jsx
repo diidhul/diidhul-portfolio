@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Slider from "react-slick"; // Impor Slider dari react-slick
 import "slick-carousel/slick/slick.css"; // Slick Carousel CSS
 import "slick-carousel/slick/slick-theme.css"; // Slick Carousel Theme CSS
+import iconProject from '../assets/iconProject.png';
 
 const skillIcons = [
     {
@@ -95,7 +96,7 @@ const Project = () => {
 
             {/* Gambar project */}
             <div className='flex items-center justify-center mt-8'>
-                <img src="src/assets/projectIcon.svg" alt="Project Icon" className='w-full max-w-xs md:max-w-xl' />
+                <img src={iconProject} alt="Project Icon" className='w-full max-w-xs md:max-w-xl' />
             </div>
         </section>
     );

@@ -12,7 +12,7 @@ const Hero = () => {
                 />
                 <div className="text-center md:basis-2/3 md:text-left">
                     <h1 className="text-3xl font-semibold transition-all duration-300 sm:text-4xl md:text-5xl text-darkNavyBlue hover:tracking-widest hover:text-mediumPinkishBeige">
-                        Hi<span className="inline-block font-mono animate-wave">👋</span> I alfadhil, Junior Frontend Engineer
+                        Hola<span className="inline-block font-mono animate-wave">👋</span> Me alfadhil, Junior Frontend Engineer
                     </h1>
                     <button
                         className="px-4 py-2 mt-6 text-white duration-300 border-2 border-dotted rounded-lg border-lightGray bg-darkNavyBlue hover:bg-mediumPinkishBeige hover:text-darkNavyBlue hover:font-bold hover:scale-110"
