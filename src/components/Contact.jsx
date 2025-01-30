@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const Contact = () => {
     return (
@@ -7,7 +7,7 @@ const Contact = () => {
                 <div className='p-4 border-2 rounded-lg sm:p-6 md:p-8 border-darkNavyBlue'>
                     <h2 className='py-2 text-xl font-semibold sm:text-2xl md:text-3xl text-darkNavyBlue'>Contact</h2>
                     <div>
-                        <p className="text-sm sm:text-base md:text-lg">I'm currently looking to join a cross-functional team that values improving people's lives through accessible design. Have a project in mind? Let's connect.</p>
+                        <p className="text-sm sm:text-base md:text-lg">I&apos;m currently looking to join a cross-functional team that values improving people&apos;s lives through accessible design. Have a project in mind? Let&apos;s connect.</p>
                         <div className='mt-4'>
                             <ul className="space-y-3">
                                 <li>

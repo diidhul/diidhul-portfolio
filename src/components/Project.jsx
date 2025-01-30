@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios'; //library untuk HTTP request
+import { useEffect, useState } from 'react';
 import Slider from "react-slick"; // Impor Slider dari react-slick
 import "slick-carousel/slick/slick.css"; // Slick Carousel CSS
 import "slick-carousel/slick/slick-theme.css"; // Slick Carousel Theme CSS

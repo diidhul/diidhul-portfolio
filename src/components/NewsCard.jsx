@@ -1,6 +1,4 @@
-import React from 'react'
-import PropTypes from 'prop-types' //import proptypes untuk 
-
+import PropTypes from 'prop-types' //import proptypes untuk menyebutkan tipe data
 
 const NewsCard = ({ item }) => {
 
@@ -43,8 +41,14 @@ const NewsCard = ({ item }) => {
     )
 }
 
-NewsCard.PropTypes = {
-    item: PropTypes.objectOf(PropTypes.any).isRequired,
-}
+NewsCard.propTypes = {
+    item: PropTypes.shape({
+        thumbnail: PropTypes.string.isRequired,
+        link: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        pubDate: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired
+    }).isRequired,
+};
 
 export default NewsCard

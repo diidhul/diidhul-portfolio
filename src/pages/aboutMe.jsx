@@ -1,4 +1,3 @@
-import React from 'react';
 import Contact from '../components/Contact';
 
 const AboutMe = () => {
@@ -7,7 +6,7 @@ const AboutMe = () => {
             <br />
 
             <p style={{ textIndent: '1.5rem', marginBottom: '1rem' }}>
-                <span className="text-red-400">Hello! </span> I'm Alfadhil, a dedicated IT professional and aspiring Frontend Engineer with a strong background in web development and support.
+                <span className="text-red-400">Hello! </span> I&apos;m Alfadhil, a dedicated IT professional and aspiring Frontend Engineer with a strong background in web development and support.
                 I graduated from Universitas Syiah Kuala in Banda Aceh, where I built a foundation in computer science and developed a deep interest in web technology.
             </p>
 

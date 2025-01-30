@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 export default function Modal({ toggleModal, isOpen }) {
     const [email, setEmail] = useState(''); // State untuk menyimpan email
@@ -33,6 +34,17 @@ export default function Modal({ toggleModal, isOpen }) {
             console.error("Error:", error);
         }
     };
+
+    handleSubscribe.propTypes = {
+        isOpen: PropTypes.bool.isRequired,
+        toggleModal: PropTypes.func.isRequired
+    };
+
+    Modal.propTypes = {
+        isOpen: PropTypes.bool.isRequired,
+        toggleModal: PropTypes.func.isRequired
+    };
+
 
     return (
         <div className="fixed inset-0 z-10 flex items-center justify-center bg-black bg-opacity-50 modal-overlay">
